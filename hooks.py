@@ -1,5 +1,5 @@
-app_name = "osazapp2024"
-app_title = "Osazapp2024"
+app_name = "osazapp2026"
+app_title = "Osazapp2026"
 app_publisher = "sandi"
 app_description = "osaz aplikacija"
 app_email = "info@osaz.si"

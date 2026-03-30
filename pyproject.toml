@@ -1,0 +1,10 @@
+[project]
+name = "Osaz2026"
+version = "0.0.1"
+description = "Custom app for ERPNext/Frappe"
+requires = ["frappe"]
+dependencies = []
+
+[build-system]
+requires = ["flit_core>=3,<4"]
+build-backend = "flit_core.buildapi"
