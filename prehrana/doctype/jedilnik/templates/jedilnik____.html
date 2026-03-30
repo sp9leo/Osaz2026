@@ -1,0 +1,45 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+{{jedilnik}}
+<h1>{{ doc.datum }}</h1>
+
+{{ title }}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">zajtrk</th>
+        <th scope="col">Malica</th>
+        <th scope="col">Kosilo</th>
+        <th scope="col">Popoldanska malica</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Vrtec</th>
+        <td>{%for i in doc.zajtrk_vrtec%}{{ i.zivila_link }}<br>{%endfor%}</td>
+        <td>{%for i in doc.malica_vrtec%}{{ i.zivila_link }}<br>{%endfor%}</td>
+        <td>{%for i in doc.kosilo_vrtec%}{{ i.zivila_link }}<br>{%endfor%}</td>
+        <td>{%for i in doc.pop_malica_vrtec%}{{ i.zivila_link }}<br>{%endfor%}</td>
+      </tr>
+      <tr>
+        <th scope="row">Sola</th>
+        <td>{%for i in doc.zajtrk_sola%}{{ i.zivila_link }}<br>{%endfor%}</td>
+        <td>{%for i in doc.malica_sola%}{{ i.zivila_link }}<br>{%endfor%}</td>
+        <td>{%for i in doc.kosilo_sola%}{{ i.zivila_link }}<br>{%endfor%}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Gimnazija</th>
+        <td>{%for i in doc.zajtrk_gimnazija%}{{ i.zivila_link }}<br>{%endfor%}</td>
+        <td>{%for i in doc.malica_gimnazija%}{{ i.zivila_link }}<br>{%endfor%}</td>
+        <td>{%for i in doc.kosilo_gimnazija%}{{ i.zivila_link }}<br>{%endfor%}</td>
+      </tr>
+    </tbody>
+  </table>
+ 
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->

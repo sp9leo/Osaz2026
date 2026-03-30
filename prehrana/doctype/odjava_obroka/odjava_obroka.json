@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-07-28 13:34:23.947744",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "datum",
+  "ucenec",
+  "obrok",
+  "column_break_ugnk",
+  "user",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "datum",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Datum"
+  },
+  {
+   "fieldname": "ucenec",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ucenec",
+   "options": "Ucenci",
+   "search_index": 1
+  },
+  {
+   "fieldname": "obrok",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Obrok",
+   "options": "Cel dan\nZajtrk\nMalica\nKosilo"
+  },
+  {
+   "fieldname": "column_break_ugnk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "V pregledu\nPotrjeno\nZavrnjeno"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-24 10:24:12.075465",
+ "modified_by": "Administrator",
+ "module": "Prehrana",
+ "name": "Odjava obroka",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "V pregledu"
+  },
+  {
+   "color": "Green",
+   "title": "Potrjeno"
+  },
+  {
+   "color": "Red",
+   "title": "Zavrnjeno"
+  }
+ ]
+}

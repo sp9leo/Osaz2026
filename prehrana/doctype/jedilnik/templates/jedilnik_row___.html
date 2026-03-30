@@ -1,0 +1,15 @@
+<div>
+	<a href="{{ doc.route }}">{{ doc.title or doc.name }}{{ doc.datum}}</a>
+
+
+
+{%for i in doc.zajtrk_vrtec%}{{ i.zivila_link }}{%endfor%}<br>
+{%for i in doc.malica_vrtec%}{{ i.zivila_link }}{%endfor%}<br>
+{%for i in doc.kosilo_vrtec%}{{ i.zivila_link }}{%endfor%}<br>
+
+{%for i in doc.zajtrk_sola%}{{ i.zivila_link }}{%endfor%}<br>
+{%for i in doc.malica_sola%}{{ i.zivila_link }}{%endfor%}<br>
+{%for i in doc.kosilo_sola%}{{ i.zivila_link }}{%endfor%}<br>
+</div>
+
+<!-- this is a sample default list template -->

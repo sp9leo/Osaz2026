@@ -1,0 +1,33 @@
+<!-- my_template.html -->
+<div>
+    <h3>Obroki</h3>
+</div>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Ime</th>
+            <th scope="col">Uid</th>
+            <th scope="col">Datum</th>
+            <th scope="col">Obrok</th>
+        </tr>
+    </thead>
+
+    {% for o in obrok %}
+
+
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>{{ o.name }}</td>
+            <td>{{ o.uid }}</td>
+            <td>{{ o.qr_date }}</td>
+            <td>{{ o.obrok }}</td>
+        </tr>
+
+        {% endfor %}
+</table>
+

@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-25 10:45:22.404686",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naziv",
+  "barva",
+  "column_break_yeqr",
+  "kontaktna_oseba",
+  "email",
+  "telefon"
+ ],
+ "fields": [
+  {
+   "fieldname": "naziv",
+   "fieldtype": "Data",
+   "label": "Naziv"
+  },
+  {
+   "fieldname": "kontaktna_oseba",
+   "fieldtype": "Data",
+   "label": "Kontaktna oseba"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "telefon",
+   "fieldtype": "Data",
+   "label": "Telefon"
+  },
+  {
+   "fieldname": "barva",
+   "fieldtype": "Color",
+   "label": "Barva"
+  },
+  {
+   "fieldname": "column_break_yeqr",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-25 10:49:37.887803",
+ "modified_by": "Administrator",
+ "module": "SportnaDvorana",
+ "name": "Sportna Dvorana Stranke",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

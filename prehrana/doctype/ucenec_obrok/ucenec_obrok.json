@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-28 12:11:32.338270",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ucenec_id",
+  "obrok_id",
+  "solsko_leto"
+ ],
+ "fields": [
+  {
+   "fieldname": "ucenec_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ucenec ID",
+   "options": "Ucenci"
+  },
+  {
+   "fieldname": "obrok_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Obrok ID",
+   "options": "Obroki"
+  },
+  {
+   "fieldname": "solsko_leto",
+   "fieldtype": "Link",
+   "label": "solsko leto",
+   "options": "Solsko leto"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-09 13:06:42.797791",
+ "modified_by": "Administrator",
+ "module": "Prehrana",
+ "name": "Ucenec obrok",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

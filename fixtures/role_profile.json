@@ -1,0 +1,25 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-09-24 09:44:31.599671",
+  "name": "Prehrana",
+  "role_profile": "Prehrana",
+  "roles": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-07-28 13:07:58.212121",
+  "name": "Starsi",
+  "role_profile": "Starsi",
+  "roles": [
+   {
+    "parent": "Starsi",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Starsi"
+   }
+  ]
+ }
+]

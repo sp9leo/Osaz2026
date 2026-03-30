@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-25 10:40:26.393026",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "start",
+  "end",
+  "all_day",
+  "column_break_ytrl",
+  "description",
+  "color",
+  "stranka_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Naziv"
+  },
+  {
+   "fieldname": "start",
+   "fieldtype": "Datetime",
+   "label": "Za\u010detek"
+  },
+  {
+   "fieldname": "end",
+   "fieldtype": "Datetime",
+   "label": "Konec"
+  },
+  {
+   "default": "0",
+   "fieldname": "all_day",
+   "fieldtype": "Check",
+   "label": "all_day"
+  },
+  {
+   "fieldname": "column_break_ytrl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "description"
+  },
+  {
+   "fetch_from": "stranka_id.barva",
+   "fieldname": "color",
+   "fieldtype": "Color"
+  },
+  {
+   "fieldname": "stranka_id",
+   "fieldtype": "Link",
+   "label": "resource_id",
+   "options": "Sportna Dvorana Stranke"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-25 10:50:07.588791",
+ "modified_by": "Administrator",
+ "module": "SportnaDvorana",
+ "name": "Sportna Dvorana",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

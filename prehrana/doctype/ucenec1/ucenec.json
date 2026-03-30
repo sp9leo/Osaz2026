@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-28 11:58:33.272187",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ucenec_id",
+  "full_name",
+  "ime",
+  "priimek",
+  "oddelek",
+  "column_break_qezp",
+  "starsi",
+  "rfid",
+  "izberi_rfid",
+  "section_break_xvqe",
+  "zajtrk",
+  "malica",
+  "kosilo",
+  "column_break_zzoc",
+  "vozac",
+  "dieta"
+ ],
+ "fields": [
+  {
+   "fieldname": "ime",
+   "fieldtype": "Data",
+   "label": "Ime"
+  },
+  {
+   "fieldname": "priimek",
+   "fieldtype": "Data",
+   "label": "Priimek"
+  },
+  {
+   "fieldname": "oddelek",
+   "fieldtype": "Link",
+   "label": "Oddelek",
+   "options": "Oddelek"
+  },
+  {
+   "bold": 1,
+   "fieldname": "ucenec_id",
+   "fieldtype": "Data",
+   "label": "Ucenec ID",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "starsi",
+   "fieldtype": "Link",
+   "label": "Starsi",
+   "options": "User"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "full name"
+  },
+  {
+   "default": "0",
+   "fieldname": "zajtrk",
+   "fieldtype": "Check",
+   "label": "Zajtrk"
+  },
+  {
+   "default": "0",
+   "fieldname": "malica",
+   "fieldtype": "Check",
+   "label": "Malica"
+  },
+  {
+   "default": "0",
+   "fieldname": "kosilo",
+   "fieldtype": "Check",
+   "label": "Kosilo"
+  },
+  {
+   "default": "0",
+   "fieldname": "dieta",
+   "fieldtype": "Check",
+   "label": "Dieta"
+  },
+  {
+   "default": "0",
+   "fieldname": "vozac",
+   "fieldtype": "Check",
+   "label": "Voza\u010d"
+  },
+  {
+   "fieldname": "column_break_qezp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xvqe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zzoc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rfid",
+   "fieldtype": "Link",
+   "label": "RFID",
+   "options": "RFID",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "izberi_rfid",
+   "fieldtype": "Button",
+   "label": "Izberi RFID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Prehrana",
+   "link_fieldname": "ucenec_id",
+   "table_fieldname": "table_prehrana"
+  },
+  {
+   "link_doctype": "RFID",
+   "link_fieldname": "uuid"
+  },
+  {
+   "link_doctype": "Odjava obroka",
+   "link_fieldname": "ucenec"
+  }
+ ],
+ "modified": "2024-09-14 10:28:17.492009",
+ "modified_by": "Administrator",
+ "module": "Prehrana",
+ "name": "Ucenci",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}
