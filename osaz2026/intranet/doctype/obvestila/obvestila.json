@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "format:OBV-{###}",
+ "creation": "2024-03-19 14:13:16.265800",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "route",
+  "title",
+  "public",
+  "important",
+  "zacetek",
+  "notify_on_login",
+  "notify_on_every_login",
+  "expire_notification_on",
+  "content",
+  "seen_by_section",
+  "seen_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "depends_on": "public",
+   "fieldname": "notify_on_login",
+   "fieldtype": "Check",
+   "label": "Notify users with a popup when they log in",
+   "permlevel": 1
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "depends_on": "notify_on_login",
+   "description": "If enabled, users will be notified every time they login. If not enabled, users will only be notified once.",
+   "fieldname": "notify_on_every_login",
+   "fieldtype": "Check",
+   "label": "Notify Users On Every Login",
+   "permlevel": 1
+  },
+  {
+   "depends_on": "eval:doc.notify_on_login && doc.public",
+   "fieldname": "expire_notification_on",
+   "fieldtype": "Date",
+   "label": "Expire Notification On",
+   "permlevel": 1,
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "description": "Help: To link to another record in the system, use \"/app/note/[Note Name]\" as the Link URL. (don't use \"http://\")",
+   "fieldname": "content",
+   "fieldtype": "Text Editor",
+   "in_global_search": 1,
+   "label": "Content"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "notify_on_login",
+   "fieldname": "seen_by_section",
+   "fieldtype": "Section Break",
+   "label": "Seen By",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "seen_by",
+   "fieldtype": "Table",
+   "label": "Seen By Table",
+   "options": "Note Seen By",
+   "permlevel": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "important",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Pomembno",
+   "permlevel": 1,
+   "print_hide": 1
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "public",
+   "fieldtype": "Check",
+   "label": "Public",
+   "permlevel": 1,
+   "print_hide": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "zacetek",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Velja od:",
+   "permlevel": 1,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  }
+ ],
+ "has_web_view": 1,
+ "links": [],
+ "modified": "2024-10-20 12:07:32.307852",
+ "modified_by": "Administrator",
+ "module": "Intranet",
+ "name": "Obvestila",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "important"
+  }
+ ]
+}
