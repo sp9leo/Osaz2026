@@ -1,9 +1,9 @@
 [project]
-name = "Osaz2026"
+name = "it_oprema"
 authors = [
-    { name = "sandi", email = "info@osaz.si"}
+    { name = "osaz", email = "osaz@osaz.si"}
 ]
-description = "osaz aplikacija"
+description = "it oprema app osaz"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
