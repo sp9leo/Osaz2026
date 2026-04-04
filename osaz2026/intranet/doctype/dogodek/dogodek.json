@@ -13,6 +13,7 @@
   "published",
   "route",
   "subject",
+  "predvideno",
   "column_break_4",
   "starts_on",
   "ends_on",
@@ -319,6 +320,12 @@
   {
    "fieldname": "column_break_eqrc",
    "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "predvideno",
+   "fieldtype": "Check",
+   "label": "Predvideno"
   }
  ],
  "has_web_view": 1,
@@ -327,11 +334,11 @@
  "is_calendar_and_gantt": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-11-25 08:27:31.485228",
+ "modified": "2026-04-04 15:29:41.573421",
  "modified_by": "Administrator",
  "module": "Intranet",
  "name": "Dogodek",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -360,6 +367,7 @@
  ],
  "read_only": 1,
  "route": "route",
+ "row_format": "Dynamic",
  "sender_field": "sender",
  "sort_field": "modified",
  "sort_order": "DESC",
