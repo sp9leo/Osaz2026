@@ -12,6 +12,7 @@
   "public",
   "important",
   "zacetek",
+  "velja_do",
   "notify_on_login",
   "notify_on_every_login",
   "expire_notification_on",
@@ -109,15 +110,25 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "route"
+  },
+  {
+   "bold": 1,
+   "fieldname": "velja_do",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Velja do:",
+   "permlevel": 1,
+   "print_hide": 1
   }
  ],
  "has_web_view": 1,
  "links": [],
- "modified": "2024-10-20 12:07:32.307852",
+ "modified": "2026-04-05 10:16:46.684508",
  "modified_by": "Administrator",
  "module": "Intranet",
  "name": "Obvestila",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -157,6 +168,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [

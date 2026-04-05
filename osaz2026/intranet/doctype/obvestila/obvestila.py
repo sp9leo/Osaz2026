@@ -23,13 +23,17 @@ class Obvestila(WebsiteGenerator):
 
 		content: DF.TextEditor | None
 		expire_notification_on: DF.Date | None
+		important: DF.Check
 		notify_on_every_login: DF.Check
 		notify_on_login: DF.Check
 		public: DF.Check
+		route: DF.Data | None
 		seen_by: DF.Table[NoteSeenBy]
 		title: DF.Data
-
+		velja_do: DF.Date | None
+		zacetek: DF.Date | None
 	# end: auto-generated types
+
 	def validate(self):
 		self.route = self.doctype +"/"+ self.name
 		if self.notify_on_login and not self.expire_notification_on:
