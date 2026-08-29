@@ -22,13 +22,13 @@
    "label": "Storitev",
    "options": "Zajtrk\nMalica\nKosilo"
   },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Status",
-   "options": "Prevzeto\nNeprevzeto\nOdjava"
-  },
+{
+    "fieldname": "status",
+    "fieldtype": "Select",
+    "in_list_view": 1,
+    "label": "Status",
+    "options": "Prevzeto\nNeprevzeto\nOdjava\nBrez kartice"
+   },
   {
    "fieldname": "datum",
    "fieldtype": "Date",
@@ -75,20 +75,32 @@
  "name": "Obroki",
  "naming_rule": "Expression",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+"permissions": [
+   {
+    "create": 1,
+    "delete": 1,
+    "email": 1,
+    "export": 1,
+    "print": 1,
+    "read": 1,
+    "report": 1,
+    "role": "System Manager",
+    "share": 1,
+    "write": 1
+   },
+   {
+    "create": 1,
+    "delete": 0,
+    "email": 0,
+    "export": 0,
+    "print": 0,
+    "read": 1,
+    "report": 0,
+    "role": "Prehrana",
+    "share": 0,
+    "write": 1
+   }
+  ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
