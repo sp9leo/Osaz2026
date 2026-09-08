@@ -1,0 +1,40 @@
+services:
+  reports:
+    build: .
+    container_name: reports
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - TZ=Europe/Ljubljana
+      - PATH_PREFIX=/reports
+      - SECRET_KEY=${SECRET_KEY:-}
+    volumes:
+      - ./uploads:/app/uploads
+      - ./teachers.json:/app/teachers.json:ro
+
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-public
+
+      # HTTPS route: osaz.si/reports
+      - traefik.http.routers.reports.rule=Host(`osaz.si`) && PathPrefix(`/reports`)
+      - traefik.http.routers.reports.entrypoints=websecure
+      - traefik.http.routers.reports.tls=true
+      - traefik.http.routers.reports.tls.certresolver=le
+      - traefik.http.routers.reports.service=reports
+      - traefik.http.services.reports.loadbalancer.server.port=5000
+
+      # HTTP -> HTTPS redirect for osaz.si/reports
+      - traefik.http.routers.reports-web.rule=Host(`osaz.si`) && PathPrefix(`/reports`)
+      - traefik.http.routers.reports-web.entrypoints=web
+      - traefik.http.routers.reports-web.middlewares=reports-redirect
+      - traefik.http.routers.reports-web.service=reports
+
+    networks:
+      - traefik-public
+
+networks:
+  traefik-public:
+    name: traefik-public
+    external: true

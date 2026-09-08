@@ -1,0 +1,290 @@
+{
+  "admin_pin": "9999",
+  "teachers": [
+    {
+      "name": "=SUBSTITUTE(B2,\" \",\"_\")",
+      "display": "Blatnik Tea",
+      "pin": "958037"
+    },
+    {
+      "name": "=SUBSTITUTE(B3,\" \",\"_\")",
+      "display": "Bobek Sandi",
+      "pin": "509194"
+    },
+    {
+      "name": "=SUBSTITUTE(B4,\" \",\"_\")",
+      "display": "Boškin Blokar Gabriela",
+      "pin": "512504"
+    },
+    {
+      "name": "=SUBSTITUTE(B5,\" \",\"_\")",
+      "display": "Boštjančič Ana",
+      "pin": "679326"
+    },
+    {
+      "name": "=SUBSTITUTE(B6,\" \",\"_\")",
+      "display": "Boštjančič Iris",
+      "pin": "596775"
+    },
+    {
+      "name": "=SUBSTITUTE(B7,\" \",\"_\")",
+      "display": "Brne Vodopivec Doris",
+      "pin": "448644"
+    },
+    {
+      "name": "=SUBSTITUTE(B8,\" \",\"_\")",
+      "display": "Bunderla Vesna",
+      "pin": "833179"
+    },
+    {
+      "name": "=SUBSTITUTE(B9,\" \",\"_\")",
+      "display": "Čekada Anja",
+      "pin": "156362"
+    },
+    {
+      "name": "=SUBSTITUTE(B10,\" \",\"_\")",
+      "display": "Čekada Damijana",
+      "pin": "290169"
+    },
+    {
+      "name": "=SUBSTITUTE(B11,\" \",\"_\")",
+      "display": "Česnik Sara",
+      "pin": "595642"
+    },
+    {
+      "name": "=SUBSTITUTE(B12,\" \",\"_\")",
+      "display": "Dovgan Primc Iris",
+      "pin": "687116"
+    },
+    {
+      "name": "=SUBSTITUTE(B13,\" \",\"_\")",
+      "display": "Đurković Karla",
+      "pin": "866413"
+    },
+    {
+      "name": "=SUBSTITUTE(B14,\" \",\"_\")",
+      "display": "Frank Benjamina",
+      "pin": "361246"
+    },
+    {
+      "name": "=SUBSTITUTE(B15,\" \",\"_\")",
+      "display": "Frank Vera",
+      "pin": "336934"
+    },
+    {
+      "name": "=SUBSTITUTE(B16,\" \",\"_\")",
+      "display": "Gržina Darinka",
+      "pin": "510783"
+    },
+    {
+      "name": "=SUBSTITUTE(B17,\" \",\"_\")",
+      "display": "Hofman Anja",
+      "pin": "765473"
+    },
+    {
+      "name": "=SUBSTITUTE(B18,\" \",\"_\")",
+      "display": "Hozner Volk Tanja",
+      "pin": "591335"
+    },
+    {
+      "name": "=SUBSTITUTE(B19,\" \",\"_\")",
+      "display": "Hrabar Marina",
+      "pin": "967515"
+    },
+    {
+      "name": "=SUBSTITUTE(B20,\" \",\"_\")",
+      "display": "Hrovatin Milanka",
+      "pin": "872909"
+    },
+    {
+      "name": "=SUBSTITUTE(B21,\" \",\"_\")",
+      "display": "Husu Violeta",
+      "pin": "760502"
+    },
+    {
+      "name": "=SUBSTITUTE(B22,\" \",\"_\")",
+      "display": "Iskra Klara",
+      "pin": "282858"
+    },
+    {
+      "name": "=SUBSTITUTE(B23,\" \",\"_\")",
+      "display": "Ivančič Bubnič Rafaela",
+      "pin": "248223"
+    },
+    {
+      "name": "=SUBSTITUTE(B24,\" \",\"_\")",
+      "display": "Jagodnik Nadja",
+      "pin": "778344"
+    },
+    {
+      "name": "=SUBSTITUTE(B25,\" \",\"_\")",
+      "display": "Jenko Barbara",
+      "pin": "468927"
+    },
+    {
+      "name": "=SUBSTITUTE(B26,\" \",\"_\")",
+      "display": "Jenko Suzana",
+      "pin": "144000"
+    },
+    {
+      "name": "=SUBSTITUTE(B27,\" \",\"_\")",
+      "display": "Jenko Bratovič Tanja",
+      "pin": "804436"
+    },
+    {
+      "name": "=SUBSTITUTE(B28,\" \",\"_\")",
+      "display": "Jenko Mavrič Martina",
+      "pin": "578145"
+    },
+    {
+      "name": "=SUBSTITUTE(B29,\" \",\"_\")",
+      "display": "Knafelc Jožef",
+      "pin": "876938"
+    },
+    {
+      "name": "=SUBSTITUTE(B30,\" \",\"_\")",
+      "display": "Kocjančič Adrijana",
+      "pin": "615814"
+    },
+    {
+      "name": "=SUBSTITUTE(B31,\" \",\"_\")",
+      "display": "Kogovšek Sara",
+      "pin": "970564"
+    },
+    {
+      "name": "=SUBSTITUTE(B32,\" \",\"_\")",
+      "display": "Kosič Mateja",
+      "pin": "388382"
+    },
+    {
+      "name": "=SUBSTITUTE(B33,\" \",\"_\")",
+      "display": "La Cognata Emanuela",
+      "pin": "344249"
+    },
+    {
+      "name": "=SUBSTITUTE(B34,\" \",\"_\")",
+      "display": "Lenarčič Maja",
+      "pin": "110302"
+    },
+    {
+      "name": "=SUBSTITUTE(B35,\" \",\"_\")",
+      "display": "Ličan Sonja",
+      "pin": "269901"
+    },
+    {
+      "name": "=SUBSTITUTE(B36,\" \",\"_\")",
+      "display": "Maljevac Mateja",
+      "pin": "762571"
+    },
+    {
+      "name": "=SUBSTITUTE(B37,\" \",\"_\")",
+      "display": "Paladin Stjepan",
+      "pin": "942567"
+    },
+    {
+      "name": "=SUBSTITUTE(B38,\" \",\"_\")",
+      "display": "Piljić Ines",
+      "pin": "847452"
+    },
+    {
+      "name": "=SUBSTITUTE(B39,\" \",\"_\")",
+      "display": "Poklar Iris",
+      "pin": "196816"
+    },
+    {
+      "name": "=SUBSTITUTE(B40,\" \",\"_\")",
+      "display": "Prelec Mojca",
+      "pin": "601162"
+    },
+    {
+      "name": "=SUBSTITUTE(B41,\" \",\"_\")",
+      "display": "Primc Helena",
+      "pin": "721085"
+    },
+    {
+      "name": "=SUBSTITUTE(B42,\" \",\"_\")",
+      "display": "Prosen Batista Mojca",
+      "pin": "612257"
+    },
+    {
+      "name": "=SUBSTITUTE(B43,\" \",\"_\")",
+      "display": "Rojc Tamara",
+      "pin": "778913"
+    },
+    {
+      "name": "=SUBSTITUTE(B44,\" \",\"_\")",
+      "display": "Slosar Jurečič Maja",
+      "pin": "401667"
+    },
+    {
+      "name": "=SUBSTITUTE(B45,\" \",\"_\")",
+      "display": "Spetič Petra",
+      "pin": "102646"
+    },
+    {
+      "name": "=SUBSTITUTE(B46,\" \",\"_\")",
+      "display": "Stegu Andreja",
+      "pin": "504187"
+    },
+    {
+      "name": "=SUBSTITUTE(B47,\" \",\"_\")",
+      "display": "Šestan Ines",
+      "pin": "879974"
+    },
+    {
+      "name": "=SUBSTITUTE(B48,\" \",\"_\")",
+      "display": "Udovič Rihard",
+      "pin": "856562"
+    },
+    {
+      "name": "=SUBSTITUTE(B49,\" \",\"_\")",
+      "display": "Valenčić Štembergar Anja",
+      "pin": "685735"
+    },
+    {
+      "name": "=SUBSTITUTE(B50,\" \",\"_\")",
+      "display": "Valenčič Urška",
+      "pin": "402405"
+    },
+    {
+      "name": "=SUBSTITUTE(B51,\" \",\"_\")",
+      "display": "Vičič Jagodnik Maja",
+      "pin": "738403"
+    },
+    {
+      "name": "=SUBSTITUTE(B52,\" \",\"_\")",
+      "display": "Vrh Marjetka",
+      "pin": "701913"
+    },
+    {
+      "name": "=SUBSTITUTE(B53,\" \",\"_\")",
+      "display": "Zadnik Karin",
+      "pin": "462918"
+    },
+    {
+      "name": "=SUBSTITUTE(B54,\" \",\"_\")",
+      "display": "Zalar Anja",
+      "pin": "941344"
+    },
+    {
+      "name": "=SUBSTITUTE(B55,\" \",\"_\")",
+      "display": "Žužek Andreja",
+      "pin": "476233"
+    },
+    {
+      "name": "=SUBSTITUTE(B56,\" \",\"_\")",
+      "display": "Furlan Dominik",
+      "pin": "727143"
+    },
+    {
+      "name": "=SUBSTITUTE(B57,\" \",\"_\")",
+      "display": "Rendulić Lidija",
+      "pin": "636170"
+    },
+    {
+      "name": "=SUBSTITUTE(B58,\" \",\"_\")",
+      "display": "Kompan Romana",
+      "pin": "509362"
+    }
+  ]
+}
