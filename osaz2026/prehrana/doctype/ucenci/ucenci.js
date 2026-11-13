@@ -70,7 +70,7 @@ frappe.ui.form.on('Ucenci', {
   refresh: function(frm) {
     // Call the server-side method to fetch data
     frappe.call({
-      method: 'Osaz2026.prehrana.doctype.ucenci.ucenci.get_prehrana_data',
+      method: 'osaz2026.prehrana.doctype.ucenci.ucenci.get_prehrana_data',
       args: {
         docname: frm.doc.name
       },

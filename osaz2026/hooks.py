@@ -1,4 +1,4 @@
-app_name = "Osaz2026"
+app_name = "osaz2026"
 app_title = "Osazapp2026"
 app_publisher = "sandi"
 app_description = "osaz aplikacija"
