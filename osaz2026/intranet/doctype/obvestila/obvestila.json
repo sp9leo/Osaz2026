@@ -12,6 +12,7 @@
   "public",
   "important",
   "zacetek",
+  "velja_do",
   "notify_on_login",
   "notify_on_every_login",
   "expire_notification_on",
@@ -109,6 +110,16 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "route"
+  },
+  {
+   "bold": 1,
+   "fieldname": "velja_do",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Velja do:",
+   "permlevel": 1,
+   "print_hide": 1
   }
  ],
  "has_web_view": 1,
